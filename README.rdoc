@@ -1,18 +1,24 @@
-= hoe_doofus
+= Hoe is a Doofus
 
-* http://github.com/jbarnette/hoe_doofus
+* http://github.com/jbarnette/hoe-doofus
 
 == Description
 
-FIX (describe your package)
+A Hoe plugin that helps me (and you, maybe?) keep from messing up gem
+releases. It shows a configurable checklist when <tt>rake release</tt>
+is run, and provides a chance to abort if anything's been forgotten.
 
 == Examples
 
-  FIX (code sample of usage)
+    # in your Rakefile
+    Hoe.plugin :doofus
+
+    # to see the current checklist
+    $ rake doofus
 
 == Installation
 
-    $ gem install hoe_doofus
+    $ gem install hoe-doofus
 
 == License
 
